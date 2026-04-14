@@ -23,8 +23,13 @@ public class VehiculoCombustible extends Vehiculo {
 
     @Override
     public double calcularConsumo(double kilometros) {
-        double extras = LocalDate.now().getYear() - anio > 5 ? (kilometros / 15) * litrosExtra : 0;
-        double total = (kilometros / kilometrosPorLitro) + extras;
+         double extra = LocalDate.now().getYear() - anio > 5
+                ? (kilometros / 15) * litrosExtra
+                : 0;
+
+        // Consumo total = consumo normal + consumo extra
+        double total = (kilometros / kilometrosPorLitro) + extra;
+
         return total;
     }
 }
