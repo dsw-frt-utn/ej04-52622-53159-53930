@@ -25,7 +25,7 @@ public class Persistencia {
     }
     
     private static void inicializarVehiculos(){
-        Sucursal s1 = sucursales.get(0);
+        /**Sucursal s1 = sucursales.get(0);
         Sucursal s2 = sucursales.get(1);
         
         VehiculoElectrico v1 = new VehiculoElectrico("AE123FG", "Renault", "Kangoo E-Tech", 2020, 1000, s1, 16);
@@ -37,7 +37,7 @@ public class Persistencia {
         vehiculos.add(v1);
         vehiculos.add(v2);
         vehiculos.add(v3);
-        vehiculos.add(v4);
+        vehiculos.add(v4);*/
     }
     
     public static ArrayList<Vehiculo> getVehiculos(){
